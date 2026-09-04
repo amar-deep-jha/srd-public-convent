@@ -1,7 +1,0 @@
-{
-  "name":"srd-public-convent-exact-rebuild",
-  "version":"2.0.0",
-  "private":true,
-  "scripts":{"dev":"vite","build":"vite build","preview":"vite preview"},
-  "devDependencies":{"vite":"^7.1.0"}
-}
