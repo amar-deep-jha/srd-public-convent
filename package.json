@@ -1,0 +1,18 @@
+{
+  "name": "srd-public-convent",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Premium six-page website for S.R.D. Public Convent, Santha, Sant Kabir Nagar (UP).",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0"
+  }
+}

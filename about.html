@@ -1,227 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us | S.R.D. Public Convent</title>
-<meta name="description" content="Learn about S.R.D. Public Convent — our identity, mission, values, and leadership in Santha, Sant Kabir Nagar, Uttar Pradesh.">
-<link rel="icon" type="image/svg+xml" href="assets/icons/logo-seal.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>About Us | S.R.D. Public Convent, Santha</title>
+  <meta name="description" content="Discover the identity, mission, vision and values of S.R.D. Public Convent — a UP Board school in Santha, Sant Kabir Nagar, nurturing children from Nursery to Class 8.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="S.R.D. Public Convent">
+  <meta property="og:title" content="About S.R.D. Public Convent">
+  <meta property="og:description" content="A UP Board school in Santha, Sant Kabir Nagar, built around one belief: every child deserves a nurturing place to learn, grow and shine.">
+  <meta property="og:image" content="/images/about-campus.webp">
+
+  <link rel="icon" type="image/svg+xml" href="/icons/logo-seal.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/styles/style.css">
+
+  <script>
+    (function () {
+      var url = location.href.split('#')[0].split('?')[0];
+      var link = document.createElement('link');
+      link.rel = 'canonical';
+      link.href = url;
+      document.head.appendChild(link);
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "S.R.D. Public Convent",
+    "slogan": "Learn · Grow · Shine",
+    "telephone": ["+919839542475", "+919919858924"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Santha, Sant Kabir Nagar",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "272270",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
 </head>
 <body>
 
-<div class="topbar">
-  <div class="container">
-    <div class="topbar-contacts">
-      <a href="tel:+919839542475" data-track="call_click">📞 +91 98395 42475</a>
-      <a href="tel:+919919858924" data-track="call_click">📞 +91 99198 58924</a>
-      <span class="topbar-tag">📍 Santha, Sant Kabir Nagar, UP – 272270</span>
-    </div>
-    <span class="topbar-tag">Admissions Open — Session 2026–27</span>
-  </div>
-</div>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<header class="navbar">
-  <div class="container nav-inner">
-    <a href="index.html" class="brand">
-      <img src="assets/icons/logo-seal.svg" alt="S.R.D. Public Convent emblem" class="brand-mark">
-      <span class="brand-text">
-        <span class="brand-name">S.R.D. Public Convent</span>
-        <span class="brand-tagline">Learn • Grow • Shine</span>
-      </span>
-    </a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="academics.html">Academics</a>
-      <a href="facilities.html">Facilities</a>
-      <a href="contact.html">Contact</a>
-      <a href="admissions.html" class="nav-cta">Admissions 2026–27</a>
-    </nav>
-    <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileDrawer">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-<div class="scrim"></div>
-<nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" aria-hidden="true">
-  <div class="drawer-top">
-    <span class="brand-tagline" style="color:#dcb45f;">Menu</span>
-    <button class="drawer-close" aria-label="Close menu">&times;</button>
-  </div>
-  <a href="index.html">Home</a>
-  <a href="about.html" class="active">About</a>
-  <a href="academics.html">Academics</a>
-  <a href="facilities.html">Facilities</a>
-  <a href="contact.html">Contact</a>
-  <a href="admissions.html" class="drawer-cta">Admissions 2026–27</a>
-</nav>
-
-<section class="page-header">
-  <img src="assets/icons/rings.svg" class="page-header-rings" alt="">
-  <div class="container">
-    <div class="breadcrumb"><a href="index.html">Home</a> / About Us</div>
-    <h1>About S.R.D. Public Convent</h1>
-    <p>A UP Board institution in Santha, Sant Kabir Nagar, built around one belief: every child deserves a nurturing place to learn, grow and shine.</p>
-  </div>
-</section>
-
-<!-- IDENTITY -->
-<section>
-  <div class="container two-col">
-    <div class="reveal">
-      <div class="hero-photo-frame ratio-4-3">
-        <img src="assets/images/about-campus.webp" alt="Students walking through the S.R.D. Public Convent campus">
+  <!-- ============ TOP UTILITY BAR ============ -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-contacts">
+        <a href="tel:+919839542475" data-track="phone_click">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2.2z"/></svg>
+          +91 98395 42475
+        </a>
+        <a href="tel:+919919858924" data-track="phone_click">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2.2z"/></svg>
+          +91 99198 58924
+        </a>
+        <span class="topbar-tag">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Santha, Sant Kabir Nagar, UP – 272270
+        </span>
       </div>
-    </div>
-    <div class="reveal reveal-delay-1">
-      <span class="eyebrow">Our Identity</span>
-      <h2 class="section-title">Rooted in Santha, built for young minds</h2>
-      <p class="section-sub" style="max-width:100%; margin-bottom:16px;">S.R.D. Public Convent serves the community of Santha, Sant Kabir Nagar, Uttar Pradesh, offering education from Nursery through Class 8 under the UP Board curriculum. We believe a school's first responsibility is to make a child feel safe, seen and genuinely curious about the world.</p>
-      <p class="section-sub" style="max-width:100%;">Our classrooms stay intentionally small, our teachers stay closely involved, and our campus is designed so that every stage of a child's early education — from first alphabets to board-aligned subject clinics — happens under one caring roof.</p>
-      <div class="pill-list">
-        <span>UP Board Curriculum</span>
-        <span>Nursery to Class 8</span>
-        <span>Session 2026–27</span>
-        <span>Santha, Sant Kabir Nagar</span>
-      </div>
+      <span class="topbar-tag"><span class="dot" aria-hidden="true"></span>Admissions Open — Session 2026–27</span>
     </div>
   </div>
-</section>
 
-<!-- MISSION / VISION -->
-<section class="section-alt">
-  <div class="container">
-    <div class="section-head center">
-      <span class="eyebrow">What Guides Us</span>
-      <h2 class="section-title">Our Mission &amp; Vision</h2>
-    </div>
-    <div class="card-grid cols-2">
-      <div class="feature-card reveal">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg></div>
-        <h3>Our Mission</h3>
-        <p>To provide every child with concept-first, personally attentive education — building strong foundations in language, mathematics, science and digital literacy from the earliest years, so that learning always feels achievable and encouraging.</p>
-      </div>
-      <div class="feature-card reveal reveal-delay-1">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
-        <h3>Our Vision</h3>
-        <p>To be Santha's most trusted school for early and middle education — a place where families know their children are nurtured academically, emotionally and physically, all the way from Nursery to Class 8.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CORE VALUES -->
-<section>
-  <div class="container two-col">
-    <div class="reveal">
-      <span class="eyebrow">What We Stand For</span>
-      <h2 class="section-title">Our Core Values</h2>
-      <p class="section-sub" style="max-width:100%;">These principles shape every classroom decision, every lesson plan, and every conversation we have with parents.</p>
-    </div>
-    <ul class="value-list reveal reveal-delay-1">
-      <li>
-        <span class="num">01</span>
-        <div><strong>Nurturing Attention</strong><span class="desc">Small class sizes so no child is overlooked.</span></div>
-      </li>
-      <li>
-        <span class="num">02</span>
-        <div><strong>Strong Fundamentals</strong><span class="desc">Concepts built carefully before speed or scale.</span></div>
-      </li>
-      <li>
-        <span class="num">03</span>
-        <div><strong>Curiosity &amp; Confidence</strong><span class="desc">Encouraging children to ask, try and grow.</span></div>
-      </li>
-      <li>
-        <span class="num">04</span>
-        <div><strong>Discipline with Warmth</strong><span class="desc">Structure that feels supportive, never rigid.</span></div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<!-- FULL HEAD MESSAGE -->
-<section class="section-navy">
-  <div class="container leader-block">
-    <div class="leader-photo reveal">
-      <img src="assets/images/leader-headshot.webp" alt="Mrs. Meena Yadav, School Head — School leadership portrait">
-    </div>
-    <div class="reveal reveal-delay-1">
-      <span class="eyebrow eyebrow-light">Message From The School Head</span>
-      <div class="quote-mark">&ldquo;</div>
-      <blockquote>Every child deserves a nurturing environment where learning becomes a journey of confidence, curiosity and growth. At S.R.D. Public Convent, our teachers, our classrooms and our daily routines are all built with that single purpose in mind — to help each student discover what they are capable of.</blockquote>
-      <p style="color:rgba(246,245,241,0.78); margin-bottom:20px; font-size:0.95rem;">We invite every parent in Santha and the surrounding villages to visit our campus, meet our teachers, and see for themselves the environment we have built for your child.</p>
-      <div class="leader-name" style="color:#fff;">Mrs. Meena Yadav</div>
-      <div class="leader-role">School Head, S.R.D. Public Convent</div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section>
-  <div class="container">
-    <div class="cta-band reveal">
-      <div>
-        <h2>Come see our campus for yourself</h2>
-        <p>Schedule a visit or send an enquiry — our admissions desk is ready to help.</p>
-      </div>
-      <a href="admissions.html" class="btn btn-primary">Enquire Now</a>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <div class="footer-brand">
-        <img src="assets/icons/logo-seal.svg" alt="" class="brand-mark" style="width:46px;height:46px;">
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="S.R.D. Public Convent — home">
+        <img src="/icons/logo-seal.svg" alt="S.R.D. Public Convent emblem" class="brand-mark" width="48" height="48">
         <span class="brand-text">
           <span class="brand-name">S.R.D. Public Convent</span>
           <span class="brand-tagline">Learn • Grow • Shine</span>
         </span>
-      </div>
-      <p class="desc">A UP Board school in Santha, Sant Kabir Nagar, nurturing learners from Nursery to Class 8 with care, structure and genuine attention.</p>
-      </div>
-    <div>
-      <h4>Explore</h4>
-      <ul class="flinks">
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="academics.html">Academics</a></li>
-        <li><a href="facilities.html">Facilities</a></li>
-        <li><a href="admissions.html">Admissions</a></li>
-      </ul>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active" aria-current="page">About Us</a>
+        <a href="academics.html">Academics</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="contact.html">Contact</a>
+        <a href="admissions.html" class="nav-cta" data-track="admission_cta_click">Admissions 2026–27</a>
+      </nav>
+      <button type="button" class="hamburger" aria-label="Open menu" aria-controls="mobileDrawer" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <div>
-      <h4>Admissions</h4>
-      <ul class="flinks">
-        <li><a href="admissions.html">Enquiry Form</a></li>
-        <li><a href="admissions.html#process">Admission Process</a></li>
-        <li><a href="academics.html">Grade Levels</a></li>
-        <li><a href="contact.html">Contact Desk</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Reach Us</h4>
-      <ul class="flinks">
-        <li>Santha, Sant Kabir Nagar,<br>Uttar Pradesh – 272270</li>
-        <li><a href="tel:+919839542475" data-track="call_click">+91 98395 42475</a></li>
-        <li><a href="tel:+919919858924" data-track="call_click">+91 99198 58924</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="container footer-bottom">
-    <span>&copy; 2026 S.R.D. Public Convent. All rights reserved.</span>
-    <span>Designed with care for Santha's young learners.</span>
-  </div>
-</footer>
+  </header>
 
-<button class="back-to-top" aria-label="Back to top">&#8593;</button>
-<script src="script.js"></script>
+  <div class="scrim" aria-hidden="true"></div>
+  <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="drawer-top">
+      <span class="drawer-label">Menu</span>
+      <button type="button" class="drawer-close" aria-label="Close menu">&times;</button>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="about.html" aria-current="page">About Us</a>
+    <a href="academics.html">Academics</a>
+    <a href="facilities.html">Facilities</a>
+    <a href="contact.html">Contact</a>
+    <a href="admissions.html" class="drawer-cta" data-track="admission_cta_click">Admissions 2026–27</a>
+    <div class="drawer-contact">
+      <a href="tel:+919839542475" data-track="phone_click">Call +91 98395 42475</a>
+      <a href="tel:+919919858924" data-track="phone_click">Call +91 99198 58924</a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ============ PAGE HEADER ============ -->
+    <section class="page-header">
+      <img src="/icons/rings.svg" class="page-header-rings" alt="" aria-hidden="true">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a> / About Us</div>
+        <h1>About S.R.D. Public Convent</h1>
+        <p>A UP Board institution in Santha, Sant Kabir Nagar, built around one belief: every child deserves a nurturing place to learn, grow and shine.</p>
+      </div>
+    </section>
+
+    <!-- ============ OUR IDENTITY ============ -->
+    <section class="section" aria-labelledby="identity-title">
+      <div class="container two-col">
+        <div class="reveal">
+          <div class="hero-photo-frame ratio-4-3">
+            <img src="/images/about-campus.webp" alt="Students walking through the S.R.D. Public Convent campus" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <span class="eyebrow">Our Identity</span>
+          <h2 class="section-title" id="identity-title">Rooted in Santha, built for young minds</h2>
+          <p class="section-sub mb-16">S.R.D. Public Convent serves the community of Santha, Sant Kabir Nagar, Uttar Pradesh, offering education from Nursery through Class 8 under the UP Board curriculum. We believe a school's first responsibility is to make a child feel safe, seen and genuinely curious about the world.</p>
+          <p class="section-sub mb-16">Our classrooms stay intentionally small, our teachers stay closely involved, and our campus is designed so that every stage of a child's early education — from first alphabets to board-aligned subject clinics — happens under one caring roof.</p>
+          <ul class="pill-list">
+            <li class="pill">UP Board Curriculum</li>
+            <li class="pill">Nursery to Class 8</li>
+            <li class="pill">Session 2026–27</li>
+            <li class="pill">Santha, Sant Kabir Nagar</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MISSION & VISION ============ -->
+    <section class="section section-alt" aria-labelledby="mvv-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">What Guides Us</span>
+          <h2 class="section-title" id="mvv-title">Our Mission &amp; Vision</h2>
+          <p class="section-sub">Two commitments shape everything we do — what we want to achieve for your child today, and the school we want to be tomorrow.</p>
+        </div>
+        <div class="card-grid cols-2">
+          <div class="feature-card reveal">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg></div>
+            <h3>Our Mission</h3>
+            <p>To provide every child with concept-first, personally attentive education — building strong foundations in language, mathematics, science and digital literacy from the earliest years, so that learning always feels achievable and encouraging.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
+            <h3>Our Vision</h3>
+            <p>To be Santha's most trusted school for early and middle education — a place where families know their children are nurtured academically, emotionally and physically, all the way from Nursery to Class 8.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CORE VALUES ============ -->
+    <section class="section" aria-labelledby="values-title">
+      <div class="container two-col">
+        <div class="reveal">
+          <span class="eyebrow">What We Stand For</span>
+          <h2 class="section-title" id="values-title">Our Core Values</h2>
+          <p class="section-sub">These principles shape every classroom decision, every lesson plan, and every conversation we have with parents.</p>
+          <blockquote class="motto" style="margin-top:22px;">“Learn • Grow • Shine”</blockquote>
+        </div>
+        <ul class="value-list reveal reveal-delay-1">
+          <li>
+            <span class="num">01</span>
+            <div><strong>Nurturing Attention</strong><span class="desc">Small class sizes so no child is overlooked.</span></div>
+          </li>
+          <li>
+            <span class="num">02</span>
+            <div><strong>Strong Fundamentals</strong><span class="desc">Concepts built carefully before speed or scale.</span></div>
+          </li>
+          <li>
+            <span class="num">03</span>
+            <div><strong>Curiosity &amp; Confidence</strong><span class="desc">Encouraging children to ask, try and grow.</span></div>
+          </li>
+          <li>
+            <span class="num">04</span>
+            <div><strong>Discipline with Warmth</strong><span class="desc">Structure that feels supportive, never rigid.</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PHILOSOPHY ============ -->
+    <section class="section section-navy" aria-labelledby="philosophy-title">
+      <div class="container-narrow center">
+        <span class="eyebrow eyebrow-light">School Philosophy</span>
+        <h2 class="section-title" id="philosophy-title" style="color:#fff;">How we teach</h2>
+        <p class="section-sub" style="color:rgba(246,245,241,0.88);">We do not rush childhood. Concepts are introduced step by step, questions are welcomed, and mistakes are treated as part of learning. Our teachers build genuine understanding first — confidence, then speed, follows naturally.</p>
+        <p class="section-sub mt-16" style="color:rgba(246,245,241,0.88);">Every stage of a child's growth — cognitive, emotional and physical — is tended to on the same campus, by the same caring team, from the first day of Nursery to the final year of Class 8.</p>
+      </div>
+    </section>
+
+    <!-- ============ HEAD'S MESSAGE ============ -->
+    <section class="section section-alt" aria-labelledby="msg-title">
+      <div class="container leader-block">
+        <div class="leader-photo reveal">
+          <img src="/images/leader-headshot.webp" alt="Portrait of Mrs. Radhika Yadav, School Head of S.R.D. Public Convent" loading="lazy" decoding="async">
+        </div>
+        <div class="reveal reveal-delay-1">
+          <span class="eyebrow" id="msg-title">Message From The School Head</span>
+          <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+          <blockquote>Every child deserves a nurturing environment where learning becomes a journey of confidence, curiosity and growth. At S.R.D. Public Convent, our teachers, our classrooms and our daily routines are all built with that single purpose in mind — to help each student discover what they are capable of.</blockquote>
+          <p class="leader-quote-text">We invite every parent in Santha and the surrounding villages to visit our campus, meet our teachers, and see for themselves the environment we have built for your child.</p>
+          <div class="leader-name">Mrs. Radhika Yadav</div>
+          <div class="leader-role">School Head, S.R.D. Public Convent</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section section-tight section-alt" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <h2 id="cta-title">Come see our campus for yourself</h2>
+            <p>Schedule a visit or send an enquiry — our admissions desk is ready to help.</p>
+          </div>
+          <a href="admissions.html" class="btn btn-gold" data-track="admission_cta_click">Enquire Now</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="/icons/logo-seal.svg" alt="" class="brand-mark" width="46" height="46">
+          <span class="brand-text">
+            <span class="brand-name">S.R.D. Public Convent</span>
+            <span class="brand-tagline">Learn • Grow • Shine</span>
+          </span>
+        </div>
+        <p class="desc">A UP Board school in Santha, Sant Kabir Nagar, nurturing learners from Nursery to Class 8 with care, structure and genuine attention.</p>
+        <a href="admissions.html" class="btn btn-gold footer-cta" data-track="admission_cta_click">Apply for 2026–27</a>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Admissions</h4>
+        <ul>
+          <li><a href="admissions.html">Enquiry Form</a></li>
+          <li><a href="admissions.html#process">Admission Process</a></li>
+          <li><a href="academics.html">Grade Levels</a></li>
+          <li><a href="contact.html#visit">Plan a Campus Visit</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach Us</h4>
+        <ul class="footer-contact">
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <span>Santha, Sant Kabir Nagar,<br>Uttar Pradesh – 272270</span>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2.2z"/></svg>
+            <a href="tel:+919839542475" data-track="phone_click">+91 98395 42475</a>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2.2z"/></svg>
+            <a href="tel:+919919858924" data-track="phone_click">+91 99198 58924</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; 2026 S.R.D. Public Convent. All rights reserved.</span>
+      <span>Admissions open for the 2026–27 session.</span>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" aria-label="Back to top">&#8593;</button>
+
+  <script type="module" src="/src/scripts/main.js"></script>
 </body>
 </html>

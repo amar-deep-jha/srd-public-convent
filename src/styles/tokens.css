@@ -1,0 +1,66 @@
+/* ==========================================================================
+   S.R.D. Public Convent — Design Tokens
+   The single source of truth for colour, type, spacing, shape and elevation.
+   ========================================================================== */
+
+:root {
+  /* Brand palette: deep forest green + ivory + restrained gold */
+  --color-primary: #0b4a30;
+  --color-primary-dark: #063523;
+  --color-primary-deep: #042a1b;
+  --color-primary-soft: #eaf3ed;
+  --color-primary-muted: #d8e8dd;
+
+  --color-accent: #c99a2e;
+  --color-accent-light: #e3b84b;
+  --color-accent-deep: #8a6a14;      /* for small text on light backgrounds (contrast-safe) */
+
+  --color-surface: #fbfaf5;          /* warm ivory canvas */
+  --color-surface-soft: #f4f6f1;     /* alternating section */
+  --color-card: #ffffff;
+
+  --color-text: #173027;
+  --color-text-muted: #5f6e66;
+  --color-text-invert: #eef4ef;
+
+  --color-border: #e2e7e0;
+  --color-border-strong: #cdd6cc;
+
+  --color-danger: #b42318;
+  --color-danger-soft: #fdedec;
+  --color-success: #117a4b;
+  --color-success-soft: #e8f6ee;
+
+  /* Typography */
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --text-xs: 0.72rem;
+  --text-sm: 0.8rem;
+  --text-base: 0.92rem;
+  --text-md: 1rem;
+  --text-lg: 1.15rem;
+
+  /* Shape */
+  --radius-sm: 9px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
+  --radius-full: 999px;
+
+  /* Elevation */
+  --shadow-sm: 0 6px 20px rgba(12, 55, 36, 0.06);
+  --shadow-md: 0 16px 40px rgba(12, 55, 36, 0.10);
+  --shadow-lg: 0 24px 65px rgba(12, 55, 36, 0.14);
+  --shadow-gold: 0 10px 26px rgba(201, 154, 46, 0.28);
+
+  /* Layout */
+  --container: 1160px;
+  --container-narrow: 880px;
+  --header-height: 78px;
+  --topbar-height: 38px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration: 0.28s;
+}

@@ -1,45 +1,87 @@
-# S.R.D. Public Convent — Production Frontend Rebuild
+# S.R.D. Public Convent — Official Website
 
-A six-page, responsive school website rebuilt around the approved green/ivory/gold visual direction and supplied school imagery.
+Official static website for **S.R.D. Public Convent**, Santha, Sant Kabir Nagar,
+Uttar Pradesh (272270). A UP Board school nurturing learners from **Nursery to
+Class 8**.
 
-## Included
-- Home, About, Academics, Facilities, Admissions and Contact pages
-- Real supplied imagery converted to optimized WebP
-- Accessible mobile navigation with focus restoration
-- Accessible gallery lightbox with Previous/Next, Escape and keyboard controls
-- Client-side validation with visible error states
-- Reduced-motion support
-- GA4/GTM-ready click and form events when `gtag` is present
-- Vite multi-page build configuration
-- Vercel-ready `/api/enquiry` endpoint
-- No fake social links and no false form-success messages
+Motto: **Learn • Grow • Shine**
 
-## Run locally
+## Pages
+
+| Page | Path |
+| --- | --- |
+| Home | `index.html` |
+| About Us | `about.html` |
+| Academics | `academics.html` |
+| Facilities | `facilities.html` |
+| Admissions (session 2026–27) | `admissions.html` |
+| Contact | `contact.html` |
+
+## Tech stack
+
+- **Vite 7** — multi-page static build (`index`, `about`, `academics`,
+  `facilities`, `admissions`, `contact`)
+- **Vanilla JS** (`src/scripts/main.js`) — accessible mobile drawer & lightbox,
+  form validation, reveal animations, analytics hooks
+- **Plain CSS** (`src/styles/`) — token-driven design system
+- **Vercel serverless function** (`api/enquiry.js`) — enquiry form backend
+
+## Getting started
+
 ```bash
 npm install
-npm run dev
+npm run dev      # local dev server
+npm run build    # production build -> dist/
+npm run preview  # preview the production build
 ```
 
-## Production form setup (Vercel)
-The frontend posts to `/api/enquiry`. To enable email delivery, configure these Vercel environment variables:
+## Enquiry forms
 
-- `RESEND_API_KEY` — API key for the email provider
-- `SCHOOL_ENQUIRY_EMAIL` — verified destination mailbox
-- `SCHOOL_EMAIL_FROM` — optional verified sender, e.g. `S.R.D. Public Convent <admissions@your-domain.com>`
+Both forms (`admissions.html` and `contact.html`) POST to `/api/enquiry`:
 
-Until these are configured, the site deliberately shows a truthful error/fallback rather than claiming that an enquiry was recorded.
+- In **production**, deploy the `api/` folder as a Vercel serverless function.
+- In **development**, a small Vite middleware plugin answers `/api/enquiry`
+  with an honest `503` unless a dev inbox is configured.
+
+### Environment variables (production)
+
+| Variable | Required | Purpose |
+| --- | --- | --- |
+| `RESEND_API_KEY` | until configured, forms return 503 | Email provider API key |
+| `SCHOOL_ENQUIRY_EMAIL` | until configured, forms return 503 | Verified inbox for enquiries |
+| `SCHOOL_EMAIL_FROM` | optional | Verified sender address |
+| `WEBSITE_ALLOWED_ORIGINS` | optional | Comma-separated origin allow-list (CSRF) |
+| `VITE_GA_MEASUREMENT_ID` | optional | GA4 id; enables analytics when set |
+
+The site **never shows a fake success**. Until the email provider is
+configured, submissions show a truthful error with phone/WhatsApp fallbacks.
 
 ## Analytics
-If GA4 is installed and exposes `window.gtag`, the site emits:
-- `call_click`
-- `whatsapp_click`
-- `form_submit`
-- `form_success`
-- `form_error`
 
-## Production checklist
-- Verify every school statistic and claim before publishing.
-- Replace the default Resend sender with a verified school-domain sender.
-- Add the school's actual Facebook/Instagram/YouTube URLs only when available.
-- Test the website at mobile, tablet and desktop breakpoints.
-- Run Lighthouse after deployment and confirm Core Web Vitals.
+Google Analytics 4 is optional. Create a `.env` file:
+
+```
+VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+```
+
+Analytics calls are safe no-ops when unset. Event contract:
+`admission_cta_click`, `phone_click`, `whatsapp_click`, `campus_visit_click`,
+`gallery_open`, `form_start`, `form_submit`, `form_success`, `form_error`.
+
+## Images
+
+All photography lives in `public/images/*.webp` (23 files) and is served via
+`/images/...`. Brand marks are inline SVGs in `public/icons/`. No external
+image dependencies — the site works fully offline once built.
+
+## Accessibility
+
+- Skip link, `inert`-based drawer & lightbox with focus traps and Escape
+- `prefers-reduced-motion` support
+- `aria-expanded`, `aria-invalid`, `aria-describedby`, `role="alert"` wiring
+- Semantic landsections, keyboard-operable gallery, honest form statuses
+
+## Deployment
+
+Any static host works (`dist/`). Vercel is recommended because `api/enquiry.js`
+deploys natively as a serverless function.

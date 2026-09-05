@@ -1,247 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Facilities | S.R.D. Public Convent</title>
-<meta name="description" content="Discover the campus facilities at S.R.D. Public Convent — smart classrooms, reference library, computer education, subject clinics and more.">
-<link rel="icon" type="image/svg+xml" href="assets/icons/logo-seal.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Facilities | S.R.D. Public Convent, Santha</title>
+  <meta name="description" content="Smart classrooms, a reference library, computer education from Class 1, science learning, sports grounds, transport and health & wellness at S.R.D. Public Convent.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="S.R.D. Public Convent">
+  <meta property="og:title" content="Facilities at S.R.D. Public Convent">
+  <meta property="og:description" content="Smart classrooms, reference library, computer education, science learning, sports, transport and health & wellness — all on one campus in Santha.">
+  <meta property="og:image" content="/images/smart-classroom.webp">
+
+  <link rel="icon" type="image/svg+xml" href="/icons/logo-seal.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/styles/style.css">
+
+  <script>
+    (function () {
+      var url = location.href.split('#')[0].split('?')[0];
+      var link = document.createElement('link');
+      link.rel = 'canonical';
+      link.href = url;
+      document.head.appendChild(link);
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "S.R.D. Public Convent",
+    "slogan": "Learn · Grow · Shine",
+    "telephone": ["+919839542475", "+919919858924"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Santha, Sant Kabir Nagar",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "272270",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
 </head>
 <body>
 
-<div class="topbar">
-  <div class="container">
-    <div class="topbar-contacts">
-      <a href="tel:+919839542475" data-track="call_click">📞 +91 98395 42475</a>
-      <a href="tel:+919919858924" data-track="call_click">📞 +91 99198 58924</a>
-      <span class="topbar-tag">📍 Santha, Sant Kabir Nagar, UP – 272270</span>
-    </div>
-    <span class="topbar-tag">Admissions Open — Session 2026–27</span>
-  </div>
-</div>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<header class="navbar">
-  <div class="container nav-inner">
-    <a href="index.html" class="brand">
-      <img src="assets/icons/logo-seal.svg" alt="S.R.D. Public Convent emblem" class="brand-mark">
-      <span class="brand-text">
-        <span class="brand-name">S.R.D. Public Convent</span>
-        <span class="brand-tagline">Learn • Grow • Shine</span>
-      </span>
-    </a>
-    <nav class="nav-links" aria-label="Primary">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="academics.html">Academics</a>
-      <a href="facilities.html" class="active">Facilities</a>
-      <a href="contact.html">Contact</a>
-      <a href="admissions.html" class="nav-cta">Admissions 2026–27</a>
-    </nav>
-    <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileDrawer">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-<div class="scrim"></div>
-<nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" aria-hidden="true">
-  <div class="drawer-top">
-    <span class="brand-tagline" style="color:#dcb45f;">Menu</span>
-    <button class="drawer-close" aria-label="Close menu">&times;</button>
-  </div>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="academics.html">Academics</a>
-  <a href="facilities.html" class="active">Facilities</a>
-  <a href="contact.html">Contact</a>
-  <a href="admissions.html" class="drawer-cta">Admissions 2026–27</a>
-</nav>
-
-<section class="page-header">
-  <img src="assets/icons/rings.svg" class="page-header-rings" alt="">
-  <div class="container">
-    <div class="breadcrumb"><a href="index.html">Home</a> / Facilities</div>
-    <h1>Campus Facilities</h1>
-    <p>Everything on our campus is built to support real, everyday learning — for children in Nursery through Class 8.</p>
-  </div>
-</section>
-
-<!-- FACILITY CARDS -->
-<section>
-  <div class="container">
-    <div class="card-grid">
-      <div class="feature-card reveal">
-        <img class="facility-image" src="assets/images/computer-lab.webp" alt="Students using computers in the school computer laboratory">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3M6 8h4M6 12h4M14 8h4v4h-4z"/></svg></div>
-        <h3>Computer Education</h3>
-        <p>Formal digital literacy begins right from Class 1, giving students an early, confident start with technology.</p>
+  <!-- ============ TOP UTILITY BAR ============ -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-contacts">
+        <a href="tel:+919839542475" data-track="phone_click">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2.2z"/></svg>
+          +91 98395 42475
+        </a>
+        <a href="tel:+919919858924" data-track="phone_click">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2.2z"/></svg>
+          +91 99198 58924
+        </a>
+        <span class="topbar-tag">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Santha, Sant Kabir Nagar, UP – 272270
+        </span>
       </div>
-      <div class="feature-card reveal reveal-delay-1">
-        <img class="facility-image" src="assets/images/smart-classroom.webp" alt="Students learning in a technology-supported smart classroom">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-        <h3>Smart Classrooms</h3>
-        <p>Audio-visual, technology-supported classrooms that turn every lesson into an interactive experience.</p>
-      </div>
-      <div class="feature-card reveal reveal-delay-2">
-        <img class="facility-image" src="assets/images/library.webp" alt="Students reading in the school reference library">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
-        <h3>Reference Library</h3>
-        <p>A dedicated reading room with reference material to help students explore beyond the textbook.</p>
-      </div>
-      <div class="feature-card reveal">
-        <img class="facility-image" src="assets/images/science-lab.webp" alt="Students working on a guided science learning activity">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6v4H9zM7 7h10l1 14H6z"/><path d="M9 12h6M9 16h6"/></svg></div>
-        <h3>Focused Subject Clinics</h3>
-        <p>Specialised support sessions in English &amp; Science fundamentals for students who need extra reinforcement.</p>
-      </div>
-      <div class="feature-card reveal reveal-delay-1">
-        <img class="facility-image" src="assets/images/primary.webp" alt="Students receiving focused classroom attention">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2 21v-1a6 6 0 0 1 12 0v1M15 21v-1a5 5 0 0 1 7-4.5"/></svg></div>
-        <h3>Small Class Sizes</h3>
-        <p>A high teacher-to-student attention ratio, so every child gets to be seen, heard and encouraged.</p>
-      </div>
-      <div class="feature-card reveal reveal-delay-2">
-        <img class="facility-image" src="assets/images/sports-ground.webp" alt="Students participating in outdoor school activities">
-        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.5-1.5 3-3.5 3-6a4 4 0 0 0-7-2.5A4 4 0 0 0 8 8c0 2.5 1.5 4.5 3 6l4 4z"/><path d="M4 21c1-3 3-4 5-4"/></svg></div>
-        <h3>Health &amp; Wellness</h3>
-        <p>Regular on-campus medical check-ups to help keep every student healthy through the school year.</p>
-      </div>
+      <span class="topbar-tag"><span class="dot" aria-hidden="true"></span>Admissions Open — Session 2026–27</span>
     </div>
   </div>
-</section>
 
-<!-- INFO STRIP -->
-<section class="section-alt section-tight">
-  <div class="container">
-    <div class="info-strip reveal">
-      <div><strong>Nursery – Class 8</strong><span>Grade Levels Served</span></div>
-      <div><strong>UP Board</strong><span>Curriculum Followed</span></div>
-      <div><strong>Class 1 Onward</strong><span>Computer Education Begins</span></div>
-      <div><strong>Student Support</strong><span>Health &amp; Wellness Focus</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section>
-  <div class="container">
-    <div class="section-head center">
-      <span class="eyebrow">School Life</span>
-      <h2 class="section-title">Our Campus in Pictures</h2>
-      <p class="section-sub">A closer look at classrooms, the library, computer lab and everyday campus moments.</p>
-    </div>
-    <div class="gallery-grid">
-      <div class="gallery-item tall reveal" data-lightbox data-caption="Smart classroom in session">
-        <img src="assets/images/gallery-1.webp" alt="Secondary students studying together in the classroom">
-        <div class="gallery-caption">Classroom Life</div>
-      </div>
-      <div class="gallery-item reveal reveal-delay-1" data-lightbox data-caption="Creative arts and craft session">
-        <img src="assets/images/gallery-2.webp" alt="Students painting during an art and craft class">
-        <div class="gallery-caption">Creative Arts</div>
-      </div>
-      <div class="gallery-item wide reveal reveal-delay-2" data-lightbox data-caption="Digital literacy class">
-        <img src="assets/images/gallery-3.webp" alt="Students working at computers in the school computer lab">
-        <div class="gallery-caption">Computer Lab</div>
-      </div>
-      <div class="gallery-item reveal reveal-delay-3" data-lightbox data-caption="Reference reading room">
-        <img src="assets/images/gallery-4.webp" alt="Students reading together in the school library">
-        <div class="gallery-caption">Reference Library</div>
-      </div>
-      <div class="gallery-item reveal reveal-delay-1" data-lightbox data-caption="Outdoor activities and sports">
-        <img src="assets/images/gallery-5.webp" alt="Students playing football on the school sports ground">
-        <div class="gallery-caption">Sports Day</div>
-      </div>
-      <div class="gallery-item reveal reveal-delay-2" data-lightbox data-caption="Small-group learning with a teacher">
-        <img src="assets/images/gallery-6.webp" alt="Teacher guiding a small group of students through a lesson">
-        <div class="gallery-caption">Group Learning</div>
-      </div>
-      <div class="gallery-item wide reveal reveal-delay-3" data-lightbox data-caption="Focused Science subject clinic">
-        <img src="assets/images/gallery-7.webp" alt="Students and a teacher during a science subject clinic">
-        <div class="gallery-caption">Science Clinic</div>
-      </div>
-      <div class="gallery-item reveal" data-lightbox data-caption="Front view of the school campus">
-        <img src="assets/images/gallery-8.webp" alt="Students boarding the school bus outside the campus building">
-        <div class="gallery-caption">Campus Exterior</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="section-alt">
-  <div class="container">
-    <div class="cta-band reveal">
-      <div>
-        <h2>Visit our campus in person</h2>
-        <p>Nothing shows our facilities better than a walk through the classrooms themselves.</p>
-      </div>
-      <a href="contact.html" class="btn btn-primary">Plan a Visit</a>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <div class="footer-brand">
-        <img src="assets/icons/logo-seal.svg" alt="" class="brand-mark" style="width:46px;height:46px;">
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="S.R.D. Public Convent — home">
+        <img src="/icons/logo-seal.svg" alt="S.R.D. Public Convent emblem" class="brand-mark" width="48" height="48">
         <span class="brand-text">
           <span class="brand-name">S.R.D. Public Convent</span>
           <span class="brand-tagline">Learn • Grow • Shine</span>
         </span>
-      </div>
-      <p class="desc">A UP Board school in Santha, Sant Kabir Nagar, nurturing learners from Nursery to Class 8 with care, structure and genuine attention.</p>
-      </div>
-    <div>
-      <h4>Explore</h4>
-      <ul class="flinks">
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="academics.html">Academics</a></li>
-        <li><a href="facilities.html">Facilities</a></li>
-        <li><a href="admissions.html">Admissions</a></li>
-      </ul>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="academics.html">Academics</a>
+        <a href="facilities.html" class="active" aria-current="page">Facilities</a>
+        <a href="contact.html">Contact</a>
+        <a href="admissions.html" class="nav-cta" data-track="admission_cta_click">Admissions 2026–27</a>
+      </nav>
+      <button type="button" class="hamburger" aria-label="Open menu" aria-controls="mobileDrawer" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <div>
-      <h4>Admissions</h4>
-      <ul class="flinks">
-        <li><a href="admissions.html">Enquiry Form</a></li>
-        <li><a href="admissions.html#process">Admission Process</a></li>
-        <li><a href="academics.html">Grade Levels</a></li>
-        <li><a href="contact.html">Contact Desk</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Reach Us</h4>
-      <ul class="flinks">
-        <li>Santha, Sant Kabir Nagar,<br>Uttar Pradesh – 272270</li>
-        <li><a href="tel:+919839542475" data-track="call_click">+91 98395 42475</a></li>
-        <li><a href="tel:+919919858924" data-track="call_click">+91 99198 58924</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="container footer-bottom">
-    <span>&copy; 2026 S.R.D. Public Convent. All rights reserved.</span>
-    <span>Designed with care for Santha's young learners.</span>
-  </div>
-</footer>
+  </header>
 
-<div class="lightbox">
-  <div class="lightbox-inner">
-    <img src="" alt="">
-    <p class="lightbox-cap"></p>
-  </div>
-  <button class="lightbox-close" aria-label="Close">&times;</button>
-  <button class="lightbox-nav lightbox-prev" aria-label="Previous">&#8249;</button>
-  <button class="lightbox-nav lightbox-next" aria-label="Next">&#8250;</button>
-</div>
+  <div class="scrim" aria-hidden="true"></div>
+  <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="drawer-top">
+      <span class="drawer-label">Menu</span>
+      <button type="button" class="drawer-close" aria-label="Close menu">&times;</button>
+    </div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="academics.html">Academics</a>
+    <a href="facilities.html" aria-current="page">Facilities</a>
+    <a href="contact.html">Contact</a>
+    <a href="admissions.html" class="drawer-cta" data-track="admission_cta_click">Admissions 2026–27</a>
+    <div class="drawer-contact">
+      <a href="tel:+919839542475" data-track="phone_click">Call +91 98395 42475</a>
+      <a href="tel:+919919858924" data-track="phone_click">Call +91 99198 58924</a>
+    </div>
+  </nav>
 
-<button class="back-to-top" aria-label="Back to top">&#8593;</button>
-<script src="script.js"></script>
+  <main id="main">
+
+    <!-- ============ PAGE HEADER ============ -->
+    <section class="page-header">
+      <img src="/icons/rings.svg" class="page-header-rings" alt="" aria-hidden="true">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a> / Facilities</div>
+        <h1>Our Facilities</h1>
+        <p>Everything a growing child needs — classrooms, technology, books, science, sports, transport and care — all on one campus in Santha.</p>
+      </div>
+    </section>
+
+    <!-- ============ FACILITY CARDS ============ -->
+    <section class="section" aria-labelledby="facilities-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Campus &amp; Infrastructure</span>
+          <h2 class="section-title" id="facilities-title">Built for learning, play and safety</h2>
+          <p class="section-sub">Seven campus facilities that work together to support academic, physical and emotional growth.</p>
+        </div>
+        <div class="card-grid">
+          <div class="feature-card reveal">
+            <img class="facility-image" src="/images/smart-classroom.webp" alt="Students learning in a smart classroom with digital display" loading="lazy" decoding="async">
+            <h3>Smart Classrooms</h3>
+            <p>Every lesson can come alive with digital aids — making science, mathematics and languages vivid and easy to grasp.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-1">
+            <img class="facility-image" src="/images/library.webp" alt="School reference library with reading shelves" loading="lazy" decoding="async">
+            <h3>Reference Library</h3>
+            <p>A quiet corner stocked with textbooks, reference books and storybooks that encourages reading beyond the syllabus.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-2">
+            <img class="facility-image" src="/images/computer-lab.webp" alt="Students working at computers in the school computer lab" loading="lazy" decoding="async">
+            <h3>Computer Education</h3>
+            <p>Dedicated computer training from Class 1 — typing, fundamentals, safe browsing and early programming habits.</p>
+          </div>
+          <div class="feature-card reveal">
+            <img class="facility-image" src="/images/science-lab.webp" alt="Science learning equipment and displays in the classroom" loading="lazy" decoding="async">
+            <h3>Science Learning</h3>
+            <p>Demonstrations and hands-on experiments that turn abstract principles into memorable, visible experience.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-1">
+            <img class="facility-image" src="/images/sports-ground.webp" alt="Children playing on the school sports ground" loading="lazy" decoding="async">
+            <h3>Sports &amp; Play Ground</h3>
+            <p>A dedicated open ground for games and daily physical activity — because healthy bodies build healthy minds.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-2">
+            <img class="facility-image" src="/images/school-transport.webp" alt="School transport vehicle parked on campus" loading="lazy" decoding="async">
+            <h3>School Transport</h3>
+            <p>Reliable transport that brings children from the surrounding villages to campus and back home, safely.</p>
+          </div>
+          <div class="feature-card reveal">
+            <img class="facility-image" src="/images/activity.webp" alt="Students taking part in a health and wellness activity" loading="lazy" decoding="async">
+            <h3>Health &amp; Wellness</h3>
+            <p>Hygiene routines, regular check-ins and a caring eye on every child's wellbeing, throughout the school day.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-1">
+            <img class="facility-image" src="/images/gallery-1.webp" alt="S.R.D. Public Convent students during a school event" loading="lazy" decoding="async">
+            <h3>Event &amp; Cultural Days</h3>
+            <p>Festivals, celebrations and cultural programmes where children perform, present and grow in confidence.</p>
+          </div>
+          <div class="feature-card reveal reveal-delay-2">
+            <img class="facility-image" src="/images/gallery-2.webp" alt="Students posing together at a school gathering" loading="lazy" decoding="async">
+            <h3>A Supportive, Safe Campus</h3>
+            <p>A secure, supervised environment where every adult on campus is responsible for your child's wellbeing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CAMPUS GALLERY ============ -->
+    <section class="section section-alt" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Campus Life</span>
+          <h2 class="section-title" id="gallery-title">A glimpse of life at S.R.D.</h2>
+          <p class="section-sub">Moments from our campus — classrooms, play, events and everyday learning.</p>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-item tall" type="button" data-lightbox aria-label="View photo: Students at a school event" data-src="/images/gallery-1.webp" data-cap="Students at a school event">
+            <img src="/images/gallery-1.webp" alt="Students at a school event" loading="lazy" decoding="async">
+            <span class="gallery-caption">School event</span>
+          </button>
+          <button class="gallery-item" type="button" data-lightbox aria-label="View photo: Students posing at a school gathering" data-src="/images/gallery-2.webp" data-cap="Students at a school gathering">
+            <img src="/images/gallery-2.webp" alt="Students posing at a school gathering" loading="lazy" decoding="async">
+            <span class="gallery-caption">School gathering</span>
+          </button>
+          <button class="gallery-item" type="button" data-lightbox aria-label="View photo: Students enjoying the sports ground" data-src="/images/gallery-3.webp" data-cap="On the sports ground">
+            <img src="/images/gallery-3.webp" alt="Students enjoying the sports ground" loading="lazy" decoding="async">
+            <span class="gallery-caption">Sports ground</span>
+          </button>
+          <button class="gallery-item" type="button" data-lightbox aria-label="View photo: Students exploring the computer lab" data-src="/images/gallery-4.webp" data-cap="In the computer lab">
+            <img src="/images/gallery-4.webp" alt="Students exploring the computer lab" loading="lazy" decoding="async">
+            <span class="gallery-caption">Computer lab</span>
+          </button>
+          <button class="gallery-item wide" type="button" data-lightbox aria-label="View photo: Students learning together after class" data-src="/images/gallery-5.webp" data-cap="Learning together">
+            <img src="/images/gallery-5.webp" alt="Students learning together after class" loading="lazy" decoding="async">
+            <span class="gallery-caption">Learning together</span>
+          </button>
+          <button class="gallery-item" type="button" data-lightbox aria-label="View photo: Students by the school building" data-src="/images/gallery-6.webp" data-cap="Around the campus">
+            <img src="/images/gallery-6.webp" alt="Students by the school building" loading="lazy" decoding="async">
+            <span class="gallery-caption">Around the campus</span>
+          </button>
+          <button class="gallery-item" type="button" data-lightbox aria-label="View photo: Students celebrating an event at a desk" data-src="/images/gallery-7.webp" data-cap="Celebrating together">
+            <img src="/images/gallery-7.webp" alt="Students celebrating an event at a desk" loading="lazy" decoding="async">
+            <span class="gallery-caption">Celebrating together</span>
+          </button>
+          <button class="gallery-item" type="button" data-lightbox aria-label="View photo: Students in a group photo outside" data-src="/images/gallery-8.webp" data-cap="Group photo">
+            <img src="/images/gallery-8.webp" alt="Students in a group photo outside" loading="lazy" decoding="async">
+            <span class="gallery-caption">Group photo</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CAMPUS VISIT CTA ============ -->
+    <section class="section section-tight" aria-labelledby="visit-title">
+      <div class="container">
+        <div class="cta-band reveal">
+          <div>
+            <h2 id="visit-title">The best way to know us is to visit</h2>
+            <p>Walk through our classrooms, meet our teachers and see the campus your child will call their school.</p>
+          </div>
+          <a href="contact.html#visit" class="btn btn-gold" data-track="campus_visit_click">Plan a Campus Visit</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery">
+    <div class="lightbox-inner">
+      <img src="" alt="" id="lightboxImg">
+      <div class="lightbox-cap" id="lightboxCap"></div>
+      <div class="lightbox-counter" id="lightboxCounter"></div>
+      <button type="button" class="lightbox-close" aria-label="Close gallery">&times;</button>
+      <button type="button" class="lightbox-nav lightbox-prev" aria-label="Previous photo">&#8249;</button>
+      <button type="button" class="lightbox-nav lightbox-next" aria-label="Next photo">&#8250;</button>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="/icons/logo-seal.svg" alt="" class="brand-mark" width="46" height="46">
+          <span class="brand-text">
+            <span class="brand-name">S.R.D. Public Convent</span>
+            <span class="brand-tagline">Learn • Grow • Shine</span>
+          </span>
+        </div>
+        <p class="desc">A UP Board school in Santha, Sant Kabir Nagar, nurturing learners from Nursery to Class 8 with care, structure and genuine attention.</p>
+        <a href="admissions.html" class="btn btn-gold footer-cta" data-track="admission_cta_click">Apply for 2026–27</a>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="academics.html">Academics</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Admissions</h4>
+        <ul>
+          <li><a href="admissions.html">Enquiry Form</a></li>
+          <li><a href="admissions.html#process">Admission Process</a></li>
+          <li><a href="academics.html">Grade Levels</a></li>
+          <li><a href="contact.html#visit">Plan a Campus Visit</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach Us</h4>
+        <ul class="footer-contact">
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <span>Santha, Sant Kabir Nagar,<br>Uttar Pradesh – 272270</span>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2.2z"/></svg>
+            <a href="tel:+919839542475" data-track="phone_click">+91 98395 42475</a>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.4 2.1L8 9.9a16 16 0 0 0 6 6l1.4-1.4a2 2 0 0 1 2.1-.4c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.8 2.2z"/></svg>
+            <a href="tel:+919919858924" data-track="phone_click">+91 99198 58924</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; 2026 S.R.D. Public Convent. All rights reserved.</span>
+      <span>Admissions open for the 2026–27 session.</span>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" aria-label="Back to top">&#8593;</button>
+
+  <script type="module" src="/src/scripts/main.js"></script>
 </body>
 </html>
